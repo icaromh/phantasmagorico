@@ -1,0 +1,20 @@
+{
+  "name": "3.1.nightmare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "chai": "^3.5.0",
+    "nightmare": "^2.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

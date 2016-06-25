@@ -1,0 +1,16 @@
+{
+  "name": "night",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nightmare": "^2.0.8",
+    "request": "^2.67.0",
+    "vo": "^1.0.3"
+  }
+}
