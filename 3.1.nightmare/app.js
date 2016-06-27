@@ -1,7 +1,7 @@
 require('mocha-generators').install();
 var Nightmare  = require('nightmare')
   , expect     = require('chai').expect // jshint ignore:line
-  , account    = require('../../account.js')
+  , account    = require('../account.js')
   ;
 
 describe('Login', function() {

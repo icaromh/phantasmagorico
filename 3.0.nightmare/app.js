@@ -4,7 +4,7 @@ var Nightmare  = require('nightmare')
   , vo         = require('vo')
   , fs         = require('fs')
   , request    = require('request')
-  , account    = require('../../account.js')
+  , account    = require('../account.js')
   , username   = account.instagram.username
   , password   = account.instagram.password
   , userToLike = process.argv[2] || "marciegottschalk"
@@ -84,7 +84,7 @@ function *run() {
 function meAvisa(url){
   var slack = new Slack(account.slack.token);
   var msg   = `${url}
-  Te liga magrão(@icaromh), tu curtiu essa foto! Comenta com ela depois.
+  Te liga magrão, tu curtiu essa foto! Comenta com ela depois.
   `;
   
   slack.sendMessage(account.slack.user, msg);

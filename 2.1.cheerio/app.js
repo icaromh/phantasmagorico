@@ -2,10 +2,10 @@
 
 var Alelo = require('./alelo.js')
   , Slack = require('./slack.js')
-  , account = require('../../account.js')
+  , account = require('../account.js')
   ;
 
-const alelo = new Alelo(account.cpf, account.password);
+const alelo = new Alelo(account.alelo.cpf, account.alelo.password);
 
 alelo.login()
   .then(function(res){
