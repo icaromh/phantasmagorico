@@ -63,7 +63,7 @@ function *run() {
     console.log(`Curtindo a foto por você :)`);
     yield nightmare
       .evaluate(function(){
-        $('.coreSpriteHeartOpen')[0].click();
+        document.querySelector('.coreSpriteHeartOpen').click();
       })
       .wait(300)
       .screenshot('./images/depois.png')
