@@ -23,10 +23,11 @@ describe('Login', function() {
       .wait('form button')
       .evaluate(function(username, password){
         var event = new Event('input', { bubbles: true });
-        $('[name=username]')[0].value = username;
-        $('[name=username]')[0].dispatchEvent(event);
-        $('[name=password]')[0].value = password;
-        $('[name=password]')[0].dispatchEvent(event);
+        document.querySelector('[name=username]').value = username;
+        document.querySelector('[name=username]').dispatchEvent(event);
+        document.querySelector('[name=password]').value = password;
+        document.querySelector('[name=password]').dispatchEvent(event);
+
       }, account.instagram.username, account.instagram.password)
       .wait(600)
       .click('form button')
@@ -49,10 +50,10 @@ describe('Login', function() {
       .wait('form button')
       .evaluate(function(username, password){
         var event = new Event('input', { bubbles: true });
-        $('[name=username]')[0].value = username;
-        $('[name=username]')[0].dispatchEvent(event);
-        $('[name=password]')[0].value = password;
-        $('[name=password]')[0].dispatchEvent(event);
+        document.querySelector('[name=username]').value = username;
+        document.querySelector('[name=username]').dispatchEvent(event);
+        document.querySelector('[name=password]').value = password;
+        document.querySelector('[name=password]').dispatchEvent(event);
       }, account.instagram.username, 'wrongpassword')
       .wait(600)
       .click('form button')
